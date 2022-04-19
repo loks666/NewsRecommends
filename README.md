@@ -51,7 +51,8 @@ SQL文件已经放在了Django项目根目录下，自行Navicat或其他方式�
 
 4.  数据库配置
 
-```
+```python
+settings.py
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -62,6 +63,19 @@ DATABASES = {
         'PORT': '3306',
     }
 }
+
+OperationMysql.py
+    def __init__(self):
+        # 创建一个连接数据库的对象
+        self.conn = pymysql.connect(
+            host='127.0.0.1',  # 连接的数据库服务器主机名
+            port=3306,  # 数据库端口号
+            user='root',  # 数据库登录用户名
+            passwd='root',
+            db='news',  # 数据库名称
+            charset='utf8',  # 连接编码
+            cursorclass=pymysql.cursors.DictCursor
+        )
 ```
 
 
@@ -84,3 +98,12 @@ npm run dev
 npm run serve
 ```
 
+问题交流群：
+
+**问问题的人挺多的，有需要进群统一回复吧**
+
+**跑不起来的找群里的帮忙，项目不卖，论文不卖**
+
+**有需要自己拉下来改改**
+
+![1650355909174](.\e5d6aea9860bb22366283d26fb2eaff.jpg)
