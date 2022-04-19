@@ -24,7 +24,6 @@
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0522/093054_fdab818a_5294263.png "Snipaste_2021-05-16_15-06-00.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0522/093138_c168ffdb_5294263.png "Snipaste_2021-05-16_15-06-58.png")
 
-
 管理端
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0522/093157_d790df42_5294263.png "Snipaste_2021-05-16_15-07-21.png")
 ![输入图片说明](https://images.gitee.com/uploads/images/2021/0522/093233_2d55078f_5294263.png "Snipaste_2021-05-16_15-07-35.png")
@@ -106,4 +105,4 @@ npm run serve
 
 **有需要自己拉下来改改**
 
-![1650355909174](.\e5d6aea9860bb22366283d26fb2eaff.jpg)
+![1650355909174](https://s1.ax1x.com/2022/04/19/LBKFzj.jpg)
