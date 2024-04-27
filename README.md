@@ -1,6 +1,10 @@
 # Python网络爬虫与推荐算法的新闻推荐平台
 
 #### 介绍
+
+- 本项目fork自： https://gitee.com/z812483032/NewsRecommends
+- 原作者已不维护，故我这边继续维护修改，有问题提issue，看到会回
+
 网络爬虫：通过Python实现新浪新闻的爬取，可爬取新闻页面上的标题、文本、图片、视频链接（保留排版）
 推荐算法：权重衰减+标签推荐+区域推荐+热点推荐
 
@@ -50,7 +54,7 @@
 
    Python就一个文件夹"FinalProject"
 
-   打开CMD -->  `cd F:\code\NewsRecommends\FinalProject` (注意此处的路径是我本地的，改成你自己电脑上的即可)
+   打开CMD -->  `FinalProject` (注意此处的路径是我本地的，改成你自己电脑上的即可)
 
    执行 `pip install -r requirements.txt`安装Python项目运行的所需依赖
 
@@ -66,7 +70,7 @@
 
    用户端前端：News-Page
 
-   打开CMD -->  `cd F:\code\NewsRecommends\News-Page` (注意此处的路径是我本地的，改成你自己电脑上的即可)
+   打开CMD -->  `News-Page` (注意此处的路径是我本地的，改成你自己电脑上的即可)
 
    执行 `npm install`安装NodeJS所需依赖
 
@@ -74,7 +78,7 @@
 
    管理端前端：vue-admin-template-master
 
-   打开CMD -->  `cd F:\code\NewsRecommends\vue-admin-template-master` (注意此处的路径是我本地的，改成你自己电脑上的即可)
+   打开CMD -->  `vue-admin-template-master` (注意此处的路径是我本地的，改成你自己电脑上的即可)
 
    执行 `npm install`安装NodeJS所需依赖
 
@@ -88,15 +92,13 @@
 
    数据库使用的是MySQL，没安装的可以下载一个[phpstudy](https://public.xp.cn/upgrades/phpStudy_64.zip)（小皮面板）
 
-   MySQL安装了就比较难卸载干净了，卸载不干净下次安装必报错，所以不建议新手去捣鼓，不信邪的也可以去试试
-
    小皮面板上直接启动MySQL服务就行了
 
    然后就是使用Navicat去连接MySQL服务器
 
    默认账号/密码应该都是 root
 
-   然后新建一个news数据库 把目录`F:\code\NewsRecommends\FinalProject`下的news.sql导入到数据库中
+   然后新建一个news数据库 把目录`FinalProject`下的news.sql导入到数据库中
 
 6. 项目数据库配置
 
@@ -130,24 +132,22 @@ F:\code\NewsRecommends\FinalProject\newsapi\Spider\OperationMysql.py
 
 #### 启动
 
-1.  Django项目启动
+Django启动
 
 ```bash
 # 打开CMD
-cd F:\code\NewsRecommends\FinalProject\newsapi
+cd FinalProject\newsapi
 # 注意此处的路径是我本地的，改成你自己电脑上的即可
-python manage.py runserver 0.0.0.0:8000
+python manage.py runserver 127.0.0.1:8000
 ```
 
-2.  前端项目启动
-
-
+前端项目启动
 ```bash
-//用户端 （改成自己的路径）
-cd F:\code\NewsRecommends\News-Page
+//用户端
+cd News-Page
 npm run dev 
-//管理端 （改成自己的路径）
-cd F:\code\NewsRecommends\vue-admin-template-master
+//管理端
+cd vue-admin-template-master
 npm run serve
 ```
 
@@ -169,27 +169,6 @@ news_api_spiderstate表
 
 status这一列全部改成0
 
-然后再到管理端打开就完事了
+然后再到管理端打开就行了
 
-时间设置的短一些，不然你等半天也不会有数据
-
-**会Linux的其实放到Linux可能会更好用一些，不会就按照上述方法进行**
-
-
-
-## PS
-
-这是一个普通本科的毕业设计项目，耗时1个月左右，一个人独立完成开发（前端+后端），所以细节可能并不是那么到位，完成的项目也懒得继续去优化了，但是基本的功能该有的都有吧，所以如愿以偿的获得一个比较高分的答辩结果，拿我项目去做毕设的人也大有人在，论文就不要找我要了，白嫖也有个度，问我卖不卖的我也不太想搭理，因为我开的价你未必给得起，做之前我还特意去问了毕设贩子，同类型同题材的项目1500RMB，所以自重。知道用这个项目的都是学生，所以要钱没啥意义。
-
-这个项目没有用多么高深的推荐算法，所以跟机器学习的大佬们没法比~
-
-有问题私聊、加群问都行，太小白的问题，我就不太想回复了，上面保姆级教程该说的都说了
-
-毕设能不能拿高分就看各位自己的造化了
-
-愿意的就点个星，不愿意的就算啦，佛系~
-
-
-
-## 问题交流群：
-原有的交流群已经解散了哈，确实工作比较忙，没办法维护和协助大家解决问题，有问题加微信或者邮件沟通吧，能回复我尽量回复，不能回复也请尽量！！微信我主页可见。
+时间设置的短一些，不然等半天也不会有数据
